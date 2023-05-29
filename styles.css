@@ -1,0 +1,282 @@
+/* Navigation */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #9BCABB;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+ul li {
+  position: relative;
+  margin: 0 10px;
+  list-style: none;
+  display: inline-block;
+  padding: 14px;
+  font-size: 15px;
+}
+
+ul li a{
+  text-decoration: none; 
+  cursor: pointer;
+  color: #101010;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul li a:hover {
+  background-color: #E79578;
+}
+   
+/* Hero */
+.container-hero {
+  position: relative;
+  background-image: url("./img/woman-on-beach.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80%;
+
+}
+
+.text {
+  text-align: left;
+  position: absolute;
+  padding: 20px;
+  left: 40%;
+  top: 10%;
+  width: 50%;
+  background-color: #E79578;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  color: #101010;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/* Buttons */
+.mybutton {
+  border: none;
+  font-size: 20px;
+  padding : 15px 15px;
+  color: #101010; 
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#first-button {
+  background-color:white;
+}
+
+#second-button {
+  background-color: #E79578;
+  margin-bottom: 10px;
+}
+
+.mybutton:hover {
+  color: #9BCABB;
+}
+
+/* Headings */
+h1 {
+  font-family: 'Lora', serif;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  font-size: 35px;
+}
+
+h3 {
+  font-family: 'Lora', serif;
+  font-size: 30px;
+}
+
+p { 
+  font-family: 'Roboto', sans-serif;
+}
+
+.manifesto {
+  text-align: center;
+  padding-left:30px;
+  padding-right: 30px;
+  padding-top: 20px
+  
+}
+
+/* Image gallery */
+.row {
+  display: flex;
+  text-align: center;
+}
+/* Columns next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #E79578;
+  text-decoration: none;
+}
+
+.caption {
+  margin: 20px;
+}
+
+.bottom-navigation {
+  background-color: #9BCABB;
+
+}
+
+/* About page */
+
+.about-container {
+  padding: 20px;
+}
+
+#hp  {
+  float: right;    
+  margin: 0 0 0 15px;
+  }
+
+
+.timeline{
+  width:auto;
+  background-color: #F2EBE1;
+  color:#101010;
+  margin-top: 15px;
+}
+
+.timeline h3 {
+  color: #E79578;
+}
+
+.timeline ul{
+  list-style-type:none;
+  border-left:2px solid #E79578;
+  padding:10px 5px;
+}
+
+.timeline ul li{
+  padding:20px 20px;
+  position:relative;
+  cursor:pointer;
+  transition:.5s;
+}
+
+  
+.timeline ul li .content p{
+  padding:5px 0px 15px 0px;
+  font-size:16px;
+}
+
+.timeline ul li:before{
+  position:absolute;
+  content:'';
+  width:10px;
+  height:10px;
+  background-color:#9BCABB;
+  border-radius:50%;
+  left:-11px;
+  top:28px;
+}
+ 
+@media (max-width:750px){
+  .timeline{
+    width:100%;
+    padding:30px 5px 30px 10px;
+  }
+}
+
+/* FAQs */
+
+.faq-container {
+  padding: 20px;
+  
+}
+
+.accordion {
+  background-color: #F2EBE1;
+  color: #101010;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+  font-family: 'Roboto', sans-serif;
+}
+
+.active, .accordion:hover {
+  background-color: #E79578;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #101010;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.faq-answer {
+  padding-top: 15px;
+}
+
+/* Submission page */
+.story-container {
+  padding: 20px;
+}
+
+.container-fluid {
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.form-group {
+  padding: 20px;
+}
+
+
+.form-group button {
+  border: none;
+  font-size: 20px;
+  color: #101010; 
+  font-family: 'Roboto', sans-serif;
+  padding: 15px 15px;
+  background-color: #E79578;
+}
+
+.form-group button:hover {
+  color: #9BCABB;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  background-color: #E79578;
+  width: 100%;
+  text-align: center;
+}
